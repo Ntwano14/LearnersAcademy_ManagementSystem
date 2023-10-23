@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Learner's Academy Management System</title>
+</head>
+<body>
+
+<a href='assignTeacherAndStudentToClass.html'style='color:red;'>Assigning users</a>  
+&nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;<a href='Login.html' style='color:red;'>Logout </a>
+<hr>
+<form style="text-align:center; width:100%;border: 2px solid black ;
+ background-color: pink;" name="formAssign" method="POST" action="ClassTeacherInfoServlet">
+        <h2 style="text-align:center; width:100%">Assign Teacher to Class:</h2>
+        Class ID: <input type="text" name="classId" required>
+        <br><br>
+        Subject ID: <input type="text" name="subjectId" required>
+        <br><br>
+        Teacher ID: <input type="text" name="teacherId" required>
+        <br><br>
+        <input type="hidden" name="action" value="assignTeacherToClass">
+        <br><br>
+        <input type="submit" value="Assign Teacher">
+    </form>
+    <hr>
+    <form style="text-align:center; width:100%;border: 2px solid black ;
+ background-color: pink;" name="formAssign" method="POST" action="ClassStudentInfoServlet">
+        <h2 style="text-align:center; width:100%">Assign Student to Class:</h2>
+        Class ID: <input type="text" name="classId" required>
+        <br><br>
+        Subject ID: <input type="text" name="subjectId" required>
+        <br><br>
+        Student ID: <input type="text" name="studentId" required>
+        <br><br>
+        <input type="hidden" name="action" value="assignStudentToClass">
+        <br><br>
+        <input type="submit" value="Assign Student">
+    </form>
+
+</body>
+</html>

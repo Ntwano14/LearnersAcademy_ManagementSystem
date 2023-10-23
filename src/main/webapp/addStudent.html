@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student page</title>
+</head>
+<body>
+
+<a href='addStudent.html'style='color:red;'>New Student</a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;<a href = 'ShowAllStudents'style='color:red;'>View All Students</a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;<a href='Login.html' style='color:red;'>Logout </a>
+<hr>
+<h1 style="text-align:center; width:100%">Add Student</h1>
+<form style="text-align:center; width:100%;border: 2px solid black ;
+ background-color: pink;" name="formStudent" method="POST" action="AddStudentServlet">
+
+<p >
+ 	 Student Name: <input type="text" name="studentName" required>
+ 	 <br><br>
+     Class ID: <input type="text" name="classId" required><br>
+     <br><br>
+      Student Password: <input type=password name="studentPwd" required>
+     <br><br>
+    <input type="submit" value="Add Student">
+</p>
+
+</form>
+
+</body>
+</html>

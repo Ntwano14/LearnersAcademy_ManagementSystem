@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Assign Subject to Class</title>
+</head>
+<body>
+
+<a href='assignSubjectToClass.html'style='color:red;'> Assigning Subject to class</a>  
+&nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;<a href='Login.html' style='color:red;'>Logout </a>
+<hr>
+     <form style="text-align:center; width:100%;border: 2px solid black ;
+ background-color: pink;" name="formAssign" method="POST" action="AssignSubjectToAClass">
+        <h2 style="text-align:center; width:100%">Assign Subject to Class:</h2>
+        Class ID: <input type="text" name="classId" required>
+        <br><br>
+        Subject ID: <input type="text" name="subjectId" required><br>
+        <br><br>
+        <input type="hidden" name="action" value="assignSubjectToAClass">
+        <br><br>
+        <input type="submit" value="Assign Subject">
+    </form>
+
+</body>
+</html>
